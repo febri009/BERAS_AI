@@ -5,4 +5,6 @@
     <string name="title_scan">Deteksi</string>
     <string name="title_price">Harga</string>
     <string name="title_profile">Info</string>
+    <string name="welcome">Selamat Datang,</string>
+    <string name="user">User</string>
 </resources>
