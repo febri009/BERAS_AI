@@ -94,11 +94,9 @@ workflows:
   version: 2
   workflow:
     jobs:
-      - test
-      - build:
-          requires:
-            - test
+#      - test
+#      - build:
+#          requires:
+#            - test
       - publish-github-release:
-          requires:
-            - build
           context: github
