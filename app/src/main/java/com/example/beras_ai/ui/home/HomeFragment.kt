@@ -21,6 +21,7 @@ class HomeFragment : Fragment() {
 
     private lateinit var homeViewModel: HomeViewModel
     private lateinit var adapter: HomeAdapter
+    private lateinit var searchViewListener: SearchView.OnQueryTextListener
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -38,6 +39,21 @@ class HomeFragment : Fragment() {
 
         adapter = HomeAdapter(emptyList())
         binding.rvListKonten.adapter = adapter
+
+        searchViewListener = object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                return false
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                newText?.let {
+                    adapter.filterList(it)
+                }
+                return true
+            }
+        }
+
+        binding.searchView.setOnQueryTextListener(searchViewListener)
 
         homeViewModel = ViewModelProvider(requireActivity())[HomeViewModel::class.java]
         homeViewModel.listTengkulaks.observe(viewLifecycleOwner){listTengkulaks ->
