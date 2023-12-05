@@ -85,8 +85,7 @@ jobs:
               -d '{
                 "tag_name": "'"${TAG_NAME}"'",
                 "name": "'"${RELEASE_NAME}"'",
-                "body": "- Penambahan splash screen sebagai layar pertama yang muncul saat aplikasi dijalankan.
-                         - Penambahan menu Home yang berisi informasi tentang tengkulak beras dan fitur pencarian.",
+                "body": "Splash screen dan halaman home",
                 "draft": false,
                 "prerelease": false
               }'
