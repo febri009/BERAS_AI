@@ -1,18 +1,15 @@
-package com.example.beras_ai.ui.home
+package com.example.beras_ai.ui.deskripsi
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import com.example.beras_ai.databinding.FragmentDeskripsiBinding
-import com.example.beras_ai.databinding.FragmentHomeBinding
 
-class HomeFragment : Fragment() {
+class DeskripsiFragment : Fragment() {
 
-    private var _binding: FragmentHomeBinding? = null
+    private var _binding: FragmentDeskripsiBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -20,7 +17,7 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentDeskripsiBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         return root

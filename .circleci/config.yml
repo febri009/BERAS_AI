@@ -25,12 +25,13 @@ jobs:
       - run:
           name: Scanning code
           command: ./gradlew lint test
-      - store_artifacts:
-          path: app/build/reports
-          destination: lint-reports
       - run:
           name: Run Unit Tests
           command: ./gradlew test
+
+      - store_artifacts:
+          path: app/build/reports
+          destination: lint-reports
 
 
   build:
