@@ -2,7 +2,6 @@
     <!-- Base application theme. -->
     <style name="Theme.BERAS_AI" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <!-- Primary brand color. -->
         <item name="colorPrimary">@color/green1</item>
         <item name="colorPrimaryVariant">@color/yellow1</item>
         <item name="colorOnPrimary">@color/white</item>
