@@ -16,8 +16,8 @@ data class TengkulaksResponse(
 
 data class DataTengkulaks(
 
-	@field:SerializedName("createdAt")
-	val createdAt: CreatedAtTengkulaks,
+//	@field:SerializedName("createdAt")
+//	val createdAt: CreatedAtTengkulaks,
 
 	@field:SerializedName("address")
 	val address: String,
@@ -28,11 +28,11 @@ data class DataTengkulaks(
 	@field:SerializedName("name")
 	val name: String,
 
-	@field:SerializedName("id")
-	val id: String,
-
-	@field:SerializedName("updatedAt")
-	val updatedAt: UpdatedAtTengkulaks
+//	@field:SerializedName("id")
+//	val id: String,
+//
+//	@field:SerializedName("updatedAt")
+//	val updatedAt: UpdatedAtTengkulaks
 )
 
 data class CreatedAtTengkulaks(
