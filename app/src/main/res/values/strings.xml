@@ -38,4 +38,6 @@
     <string name="hasil">Hasil</string>
     <string name="result_bar">result bar</string>
     <string name="blank_result" />
+    <string name="gambar">gambar</string>
+    <string name="pilih_gambar">Pilih Gambar</string>
 </resources>

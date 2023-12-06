@@ -26,6 +26,9 @@
         android:theme="@style/Theme.BERAS_AI"
         tools:targetApi="31">
         <activity
+            android:name=".detection.GaleriActivity"
+            android:exported="false" />
+        <activity
             android:name=".detection.KameraActivity"
             android:exported="false" />
         <activity
