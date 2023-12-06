@@ -17,4 +17,6 @@
     <string name="desc_price">Harga beras di setiap provinsi Indonesia</string>
     <string name="provinsi">Provinsi</string>
     <string name="harga">Harga/Kg</string>
+    <string name="dki_jakarta">DKI Jakarta</string>
+    <string name="rp15_000">Rp15.000</string>
 </resources>
