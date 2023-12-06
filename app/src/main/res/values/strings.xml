@@ -12,4 +12,9 @@
     <string name="namaa_tengkulak">Beras Sumber Rejeki</string>
     <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel fringilla libero. Curabitur posuere lectus vitae lectus auctor, in auctor ante congue.</string>
     <string name="button_hubungi">Hubungi Tengkulak</string>
+    <string name="background">background</string>
+    <string name="title_hargaa">Daftar Harga Beras</string>
+    <string name="desc_price">Harga beras di setiap provinsi Indonesia</string>
+    <string name="provinsi">Provinsi</string>
+    <string name="harga">Harga/Kg</string>
 </resources>
