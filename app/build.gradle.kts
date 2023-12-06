@@ -60,13 +60,13 @@ dependencies {
     androidTestImplementation ("androidx.test:rules:1.5.0")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-    androidTestImplementation ("org.mockito:mockito-core:4.4.0")
+    testImplementation ("org.mockito:mockito-core:4.4.0")
     testImplementation ("org.mockito.kotlin:mockito-kotlin:3.2.0")
-    testImplementation ("org.powermock:powermock-module-junit4:2.0.9")
-    testImplementation ("org.powermock:powermock-api-mockito2:2.0.9")
     testImplementation ("androidx.arch.core:core-testing:2.1.0")
     testImplementation ("org.mockito:mockito-inline:4.4.0")
-    testImplementation ("org.robolectric:robolectric:4.7.1")
+    //testImplementation ("org.mockito:mockito-android:3.11.2")
+    testImplementation ("org.robolectric:robolectric:4.11.1")
+    //testImplementation ("com.nhaarman.mockitokotlin2:mockito-kotlin:2.1.0")
 
     implementation ("dev.priyankvasa.android:cameraview-ex:3.5.5-alpha")
 

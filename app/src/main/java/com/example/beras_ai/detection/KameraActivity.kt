@@ -14,8 +14,8 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class KameraActivity : AppCompatActivity() {
-    private lateinit var classifier: ClassificationFromCamera
-    private lateinit var binding: ActivityKameraBinding
+    lateinit var classifier: ClassificationFromCamera
+    lateinit var binding: ActivityKameraBinding
 
     override fun onRequestPermissionsResult(
         requestCode: Int,
@@ -36,11 +36,11 @@ class KameraActivity : AppCompatActivity() {
         }
     }
 
-    private fun allPermissionsGranted() = REQUIRED_PERMISSIONS.all {
+    fun allPermissionsGranted() = REQUIRED_PERMISSIONS.all {
         ContextCompat.checkSelfPermission(baseContext, it) == PackageManager.PERMISSION_GRANTED
     }
 
-    private fun requestCameraPermission() {
+    fun requestCameraPermission() {
         ActivityCompat.requestPermissions(
             this,
             REQUIRED_PERMISSIONS,
@@ -49,7 +49,7 @@ class KameraActivity : AppCompatActivity() {
     }
 
     @SuppressLint("MissingPermission")
-    override fun onCreate(savedInstanceState: Bundle?) {
+    public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityKameraBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -64,7 +64,7 @@ class KameraActivity : AppCompatActivity() {
     }
 
     @SuppressLint("MissingPermission", "SetTextI18n")
-    private fun setupCamera() {
+    fun setupCamera() {
         binding.camera.addPictureTakenListener { imageData ->
             lifecycleScope.launch(Dispatchers.Main) {
                 val recognitions = classifier.recognize(imageData.data)
@@ -81,21 +81,21 @@ class KameraActivity : AppCompatActivity() {
     }
 
     @SuppressLint("MissingPermission")
-    override fun onResume() {
+    public override fun onResume() {
         super.onResume()
         if (allPermissionsGranted()) {
             binding.camera.start()
         }
     }
 
-    override fun onPause() {
+    public override fun onPause() {
         if (allPermissionsGranted()) {
             binding.camera.stop()
         }
         super.onPause()
     }
 
-    override fun onDestroy() {
+    public override fun onDestroy() {
         if (allPermissionsGranted()) {
             binding.camera.destroy()
         }
