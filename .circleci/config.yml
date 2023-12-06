@@ -98,6 +98,6 @@ workflows:
 #          requires:
 #            - test
       - publish-github-release:
-          requires:
+#          requires:
 #            - build
           context: github
