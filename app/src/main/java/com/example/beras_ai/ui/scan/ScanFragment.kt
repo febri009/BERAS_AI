@@ -9,7 +9,7 @@ import com.example.beras_ai.databinding.FragmentScanBinding
 
 class ScanFragment : Fragment() {
 
-    private var _binding: FragmentScanBinding? = null
+    var _binding: FragmentScanBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
