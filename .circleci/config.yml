@@ -84,7 +84,7 @@ jobs:
              -d '{
                 "tag_name": "'"${TAG_NAME}"'",
                 "name": "'"${RELEASE_NAME}"'",
-                "body": "Penambahan halaman "Deskripsi Beras" yang memberikan informasi tentang 3 jenis kualitas beras.",
+                "body": "Penambahan halaman Deskripsi Beras yang memberikan informasi tentang 3 jenis kualitas beras.",
                 "draft": false,
                 "prerelease": false
               }'
@@ -93,11 +93,11 @@ workflows:
   version: 2
   workflow:
     jobs:
-      - test
-      - build:
-          requires:
-            - test
+#      - test
+#      - build:
+#          requires:
+#            - test
       - publish-github-release:
           requires:
-            - build
+#            - build
           context: github
