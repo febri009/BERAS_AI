@@ -46,7 +46,7 @@ class PriceViewModel : ViewModel() {
         })
     }
 
-    private fun getDatePrice(){
+    fun getDatePrice(){
         val client = ApiConfig.getApiService().getDate()
         client.enqueue(object : Callback<DataPrices>{
             override fun onResponse(call: Call<DataPrices>, response: Response<DataPrices>) {

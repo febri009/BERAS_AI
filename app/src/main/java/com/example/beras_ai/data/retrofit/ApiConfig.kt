@@ -6,7 +6,13 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 class ApiConfig {
+
     companion object{
+
+        fun setApiService(service: ApiService) {
+            var apiService = service
+        }
+
         fun getApiService(): ApiService{
             val authInterceptor = Interceptor{chain ->
                 val req = chain.request()
