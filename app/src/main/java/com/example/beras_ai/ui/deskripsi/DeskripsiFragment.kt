@@ -9,7 +9,7 @@ import com.example.beras_ai.databinding.FragmentDeskripsiBinding
 
 class DeskripsiFragment : Fragment() {
 
-    private var _binding: FragmentDeskripsiBinding? = null
+    var _binding: FragmentDeskripsiBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(

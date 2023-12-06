@@ -66,4 +66,5 @@ dependencies {
     testImplementation ("org.powermock:powermock-api-mockito2:2.0.9")
     testImplementation ("androidx.arch.core:core-testing:2.1.0")
     testImplementation ("org.mockito:mockito-inline:4.4.0")
+    testImplementation ("org.robolectric:robolectric:4.7.1")
 }
