@@ -33,4 +33,9 @@
     <string name="from_camera">Deteksi Melalui Kamera</string>
     <string name="from_pic">Deteksi Melalui Gambar</string>
     <string name="note">Note : Jika anda mengalami permasalahan setelah mengizinkan penggunaan camera, silahkan akses fitur kamera kembali. Fitur akan berfungsi dengan baik</string>
+    <string name="deteksi">Deteksi</string>
+    <string name="kualitas">Kualitas Berasmu :</string>
+    <string name="hasil">Hasil</string>
+    <string name="result_bar">result bar</string>
+    <string name="blank_result" />
 </resources>

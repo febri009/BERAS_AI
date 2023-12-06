@@ -67,4 +67,6 @@ dependencies {
     testImplementation ("androidx.arch.core:core-testing:2.1.0")
     testImplementation ("org.mockito:mockito-inline:4.4.0")
     testImplementation ("org.robolectric:robolectric:4.7.1")
+
+    implementation ("dev.priyankvasa.android:cameraview-ex:3.5.5-alpha")
 }
