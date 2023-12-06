@@ -61,43 +61,43 @@ jobs:
           path: app/build/outputs/apk/debug/
           destination: artifact-file
 
-  publish-github-release:
-    docker:
-      - image: cimg/android:2023.09
-    steps:
-      - checkout
-      - restore_cache:
-          key: android-orb-v1-
-      - run:
-          name: Chmod permissions
-          command: sudo chmod +x ./gradlew
-      - run:
-          name: "Publish Release on GitHub"
-          command: |
-            VERSION="1.2"
-            TAG_NAME="v${VERSION}"
-            RELEASE_NAME="Release ${VERSION}"
+#  publish-github-release:
+#    docker:
+#      - image: cimg/android:2023.09
+#    steps:
+#      - checkout
+#      - restore_cache:
+#          key: android-orb-v1-
+#      - run:
+#          name: Chmod permissions
+#          command: sudo chmod +x ./gradlew
+#      - run:
+#          name: "Publish Release on GitHub"
+#          command: |
+#            VERSION="1.2"
+#            TAG_NAME="v${VERSION}"
+#            RELEASE_NAME="Release ${VERSION}"
 
-            curl -X POST "https://api.github.com/repos/febri009/BERAS_AI/releases" \
-              -H "Authorization: Bearer ${GH_TOKEN}" \
-              -H "Content-Type: application/json" \
-             -d '{
-                "tag_name": "'"${TAG_NAME}"'",
-                "name": "'"${RELEASE_NAME}"'",
-                "body": "Penambahan halaman Deskripsi Beras yang memberikan informasi tentang 3 jenis kualitas beras.",
-                "draft": false,
-                "prerelease": false
-              }'
+#            curl -X POST "https://api.github.com/repos/febri009/BERAS_AI/releases" \
+#              -H "Authorization: Bearer ${GH_TOKEN}" \
+#              -H "Content-Type: application/json" \
+#             -d '{
+#                "tag_name": "'"${TAG_NAME}"'",
+#                "name": "'"${RELEASE_NAME}"'",
+#                "body": "Penambahan halaman Deskripsi Beras yang memberikan informasi tentang 3 jenis kualitas beras.",
+#                "draft": false,
+#                "prerelease": false
+#              }'
 
 workflows:
   version: 2
   workflow:
     jobs:
-#      - test
-#      - build:
-#          requires:
-#            - test
-      - publish-github-release:
+      - test
+      - build:
+          requires:
+            - test
+#      - publish-github-release:
 #          requires:
 #            - build
-          context: github
+ #         context: github

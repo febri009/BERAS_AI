@@ -27,4 +27,10 @@
     <string name="deskripsi_medium">Warna butirnya mungkin sedikit kurang putih bersih dibandingkan dengan beras premium, tetapi tetap memiliki penampilan yang baik.</string>
     <string name="tidak_layak">Kualitas Tidak Layak</string>
     <string name="deskripsi_tidak_layak">Butir-butir yang pecah atau hancur, warna yang kusam atau tidak seragam, dan adanya kotoran atau benda asing lainnya di dalamnya.</string>
+    <string name="opsi_title">Opsi Deteksi</string>
+    <string name="desc_opsi">Deteksi beras melalui gambar yang diambil dari kamera atau galeri</string>
+    <string name="icon">icon</string>
+    <string name="from_camera">Deteksi Melalui Kamera</string>
+    <string name="from_pic">Deteksi Melalui Gambar</string>
+    <string name="note">Note : Jika anda mengalami permasalahan setelah mengizinkan penggunaan camera, silahkan akses fitur kamera kembali. Fitur akan berfungsi dengan baik</string>
 </resources>
