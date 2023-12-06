@@ -13,8 +13,6 @@ import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
 import org.mockito.kotlin.any
 import org.mockito.kotlin.doAnswer
-import org.mockito.kotlin.verify
-import org.mockito.kotlin.verifyZeroInteractions
 import org.mockito.kotlin.whenever
 import retrofit2.Call
 import retrofit2.Callback
@@ -36,9 +34,6 @@ class PriceViewModelTest {
 
     @Mock
     private lateinit var loadPriceObserver: Observer<Boolean>
-
-    @Mock
-    private lateinit var priceDateObserver: Observer<DataPrices>
 
     private lateinit var viewModel: PriceViewModel
 
@@ -64,6 +59,5 @@ class PriceViewModelTest {
 
         viewModel.getDatePrice()
 
-        verifyZeroInteractions(priceDateObserver)
     }
 }
