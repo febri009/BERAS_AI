@@ -1,17 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:id="@+id/deskripsi_fragment"
+    android:background="@android:color/white"
+    tools:context=".ui.deskripsi.DeskripsiFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@color/green1"
+            android:alpha="0.5"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/background" />
+    </FrameLayout>
 
     <TextView
-        android:id="@+id/helloTextView"
-        android:layout_width="wrap_content"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="This Deskripsi fragment"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/deskripsi"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/CustomtextStyle3"
+        android:gravity="center" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/panduan"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/title"
+        android:textAppearance="@style/CustomtextStyle1"
+        android:gravity="center"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:layout_below="@id/title"
+        android:background="@drawable/bg_rounded_rect"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="35dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvPremium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/premium"
+                android:textColor="@color/black"
+                android:textAppearance="@style/CustomtextStyle3"/>
+
+
+            <TextView
+                android:id="@+id/tvDeskripsiPremium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/deskripsi_premium"
+                android:textColor="@color/black"
+                android:textAppearance="@style/CustomtextStyle1"
+                android:justificationMode="inter_word"
+                tools:targetApi="o" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/premium"
+                android:src="@drawable/premium" />
+
+            <TextView
+                android:id="@+id/tvMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/medium"
+                android:textColor="@color/black"
+                android:textAppearance="@style/CustomtextStyle3"/>
+
+
+            <TextView
+                android:id="@+id/tvDeskripsiMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/deskripsi_medium"
+                android:textColor="@color/black"
+                android:textAppearance="@style/CustomtextStyle1"
+                android:justificationMode="inter_word"
+                tools:targetApi="o" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/medium"
+                android:contentDescription="@string/medium" />
+
+            <TextView
+                android:id="@+id/tvBad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/tidak_layak"
+                android:textColor="@color/black"
+                android:textAppearance="@style/CustomtextStyle3"/>
+
+            <TextView
+                android:id="@+id/tvDeskripsiBad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/deskripsi_tidak_layak"
+                android:textColor="@color/black"
+                android:textAppearance="@style/CustomtextStyle1"
+                android:justificationMode="inter_word"
+                tools:targetApi="o" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:src="@drawable/bad"
+                android:contentDescription="@string/tidak_layak" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

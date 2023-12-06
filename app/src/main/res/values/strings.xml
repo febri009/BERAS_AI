@@ -19,4 +19,12 @@
     <string name="harga">Harga/Kg</string>
     <string name="dki_jakarta">DKI Jakarta</string>
     <string name="rp15_000">Rp15.000</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="panduan">Panduan buat kamu yang bingung dengan jenis-jenis kualitas beras</string>
+    <string name="premium">Kualitas Premium</string>
+    <string name="deskripsi_premium">Butir-butirnya besar, seragam, dan memiliki warna putih bersih yang mengkilap.</string>
+    <string name="medium">Kualitas Medium</string>
+    <string name="deskripsi_medium">Warna butirnya mungkin sedikit kurang putih bersih dibandingkan dengan beras premium, tetapi tetap memiliki penampilan yang baik.</string>
+    <string name="tidak_layak">Kualitas Tidak Layak</string>
+    <string name="deskripsi_tidak_layak">Butir-butir yang pecah atau hancur, warna yang kusam atau tidak seragam, dan adanya kotoran atau benda asing lainnya di dalamnya.</string>
 </resources>
