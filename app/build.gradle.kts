@@ -69,4 +69,6 @@ dependencies {
     testImplementation ("org.robolectric:robolectric:4.7.1")
 
     implementation ("dev.priyankvasa.android:cameraview-ex:3.5.5-alpha")
+
+    implementation ("org.tensorflow:tensorflow-lite:2.5.0")
 }
