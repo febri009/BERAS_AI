@@ -26,5 +26,4 @@ class PriceAdapter(private val listAdapterPrices: List<DataPrices>): RecyclerVie
             tvPrice.text = "Rp" + listPrices.price.toString()
         }
     }
-
 }

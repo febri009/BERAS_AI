@@ -74,17 +74,17 @@ jobs:
 #      - run:
 #          name: "Publish Release on GitHub"
 #          command: |
-#            VERSION="1.0"
+#            VERSION="1.1"
 #            TAG_NAME="v${VERSION}"
 #            RELEASE_NAME="Release ${VERSION}"
 #
 #            curl -X POST "https://api.github.com/repos/febri009/BERAS_AI/releases" \
 #              -H "Authorization: Bearer ${GH_TOKEN}" \
 #              -H "Content-Type: application/json" \
-#              -d '{
+#             -d '{
 #                "tag_name": "'"${TAG_NAME}"'",
 #                "name": "'"${RELEASE_NAME}"'",
-#                "body": "Splash screen dan halaman home",
+#                "body": "Penambahan halaman "Harga Beras" yang menampilkan informasi harga beras di setiap provinsi.",
 #                "draft": false,
 #                "prerelease": false
 #              }'
