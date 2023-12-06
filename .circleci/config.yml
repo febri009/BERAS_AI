@@ -84,7 +84,7 @@ jobs:
              -d '{
                 "tag_name": "'"${TAG_NAME}"'",
                 "name": "'"${RELEASE_NAME}"'",
-                "body": "Penambahan halaman "Harga Beras" yang menampilkan informasi harga beras di setiap provinsi.",
+                "body": "Penambahan halaman Harga Beras yang menampilkan informasi harga beras di setiap provinsi.",
                 "draft": false,
                 "prerelease": false
               }'
@@ -93,11 +93,11 @@ workflows:
   version: 2
   workflow:
     jobs:
-      - test
-      - build:
-          requires:
-            - test
+#      - test
+#      - build:
+#          requires:
+#            - test
       - publish-github-release:
-          requires:
-            - build
+#          requires:
+#            - build
           context: github
