@@ -74,7 +74,7 @@ jobs:
       - run:
           name: "Publish Release on GitHub"
           command: |
-            VERSION="1.5"
+            VERSION="1.6"
             TAG_NAME="v${VERSION}"
             RELEASE_NAME="Release ${VERSION}"
 
@@ -84,7 +84,7 @@ jobs:
              -d '{
                 "tag_name": "'"${TAG_NAME}"'",
                 "name": "'"${RELEASE_NAME}"'",
-                "body": "Penambahan fitur deteksi melalui galeri dengan opsi memilih gambar dari galeri dan tombol deteksi.",
+                "body": "Penambahan halaman Info dengan menu Bantuan dan Tentang Aplikasi.",
                 "draft": false,
                 "prerelease": false
               }'
@@ -97,7 +97,7 @@ workflows:
       - build:
           requires:
             - test
-#      - publish-github-release:
-#          requires:
-#            - build
-#          context: github
+      - publish-github-release:
+          requires:
+            - build
+          context: github
