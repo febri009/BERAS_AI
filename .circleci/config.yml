@@ -74,7 +74,7 @@ jobs:
       - run:
           name: "Publish Release on GitHub"
           command: |
-            VERSION="1.7"
+            VERSION="1.8"
             TAG_NAME="v${VERSION}"
             RELEASE_NAME="Release ${VERSION}"
 
@@ -84,7 +84,7 @@ jobs:
              -d '{
                 "tag_name": "'"${TAG_NAME}"'",
                 "name": "'"${RELEASE_NAME}"'",
-                "body": "Penambahan halaman Tentang Aplikasi yang memberikan informasi tentang aplikasi BERAS.AI dan pengembangnya.",
+                "body": "Penambahan halaman Bantuan dengan informasi tentang cara kerja dan penggunaan aplikasi.",
                 "draft": false,
                 "prerelease": false
               }'

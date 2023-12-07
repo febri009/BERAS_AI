@@ -1,9 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
     tools:context=".ui.info.BantuanActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@color/green1"
+            android:alpha="0.5"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/gambar" />
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bantuan"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:navigationIcon="@drawable/ic_arrow_back"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/bg_rounded_rect"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvCaraKerja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cara_kerja_aplikasi"
+                android:textColor="@color/black"
+                android:textAppearance="@style/CustomtextStyle3"/>
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="365dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/yellow2"/>
+
+            <TextView
+                android:id="@+id/tvDeskripsiCaraKerja"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/content_work"
+                android:textColor="@color/black"
+                android:textAppearance="@style/CustomtextStyle1"
+                android:justificationMode="inter_word"
+                tools:targetApi="o" />
+
+            <TextView
+                android:id="@+id/tvCaraMenggunakan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cara_menggunakan"
+                android:textColor="@color/black"
+                android:textAppearance="@style/CustomtextStyle3"/>
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="365dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/yellow2"/>
+
+            <TextView
+                android:id="@+id/tvDeskripsiCaraMenggunakan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/content_step"
+                android:textColor="@color/black"
+                android:textAppearance="@style/CustomtextStyle1"
+                android:justificationMode="inter_word"
+                tools:targetApi="o" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
