@@ -97,7 +97,7 @@ workflows:
       - build:
           requires:
             - test
-      - publish-github-release:
-          requires:
-            - build
-          context: github
+#      - publish-github-release:
+#          requires:
+#            - build
+#          context: github
