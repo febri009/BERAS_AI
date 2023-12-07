@@ -74,7 +74,7 @@ jobs:
       - run:
           name: "Publish Release on GitHub"
           command: |
-            VERSION="1.8"
+            VERSION="1.9"
             TAG_NAME="v${VERSION}"
             RELEASE_NAME="Release ${VERSION}"
 
@@ -84,7 +84,7 @@ jobs:
              -d '{
                 "tag_name": "'"${TAG_NAME}"'",
                 "name": "'"${RELEASE_NAME}"'",
-                "body": "Penambahan halaman Bantuan dengan informasi tentang cara kerja dan penggunaan aplikasi.",
+                "body": "Memperbaiki tampilan aplikasi dan menambahkan icon aplikasi",
                 "draft": false,
                 "prerelease": false
               }'
