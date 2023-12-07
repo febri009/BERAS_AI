@@ -40,4 +40,9 @@
     <string name="blank_result" />
     <string name="gambar">gambar</string>
     <string name="pilih_gambar">Pilih Gambar</string>
+    <string name="user_image">User Image</string>
+    <string name="Halo">Halo, User!</string>
+    <string name="option_bantuan">Bantuan</string>
+    <string name="arrow">arrow logo</string>
+    <string name="option_about">Tentang Aplikasi</string>
 </resources>
