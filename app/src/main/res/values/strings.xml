@@ -45,4 +45,11 @@
     <string name="option_bantuan">Bantuan</string>
     <string name="arrow">arrow logo</string>
     <string name="option_about">Tentang Aplikasi</string>
+    <string name="tentang">Tentang</string>
+    <string name="logo">logo</string>
+    <string name="apa_itu_beras_ai">Apa itu BERAS.AI?</string>
+    <string name="content_about">Dibuatnya aplikasi ini dengan tujuan mendeteksi kualitas beras yang dibagi berdasarkan 3 parameter, yaitu Premium, Medium, dan Tidak Layak. Kami menggunakan metode Convolutional Neural Network (CNN) dengan model arsitektur MobileNet. Arsitektur tersebut menjalani training menggunakan Google Colaboratory. Setelah training selesai, model disimpan dan dikonversi menggunakan TensorFlow Lite. File model yang telah dikonversi kemudian diimpor ke perangkat Android untuk diimplementasikan dalam aplikasi. Dengan menggunakan perangkat Android, pengguna dapat melakukan deteksi kualitas beras secara langsung.\nSelain itu, dalam aplikasi ini juga terdapat pengaturan otomatis untuk penggunaan flash kamera. Hal ini bertujuan agar perubahan cahaya yang terjadi di luar ruangan dengan banyak cahaya atau di dalam ruangan yang minim cahaya tidak mempengaruhi hasil deteksi. Flash kamera pada smartphone akan menyala atau mati secara otomatis berdasarkan intensitas cahaya yang ada.\nAplikasi ini juga menyediakan fitur Tengkulak Beras. User akan mendapatkan akses ke tengkulak-tengkulak terdekat untuk mendapatkan beras dengan kualitas baik. Untuk mendapatkan informasi terbaru seputar harga beras, user dapat melihatnya melalui menu Harga</string>
+    <string name="pengembang">Dikembangkan dan Dikelola oleh :</string>
+    <string name="developer">1. Febriyanti Paramudita (Mobile Developer)\n2. Rizki Abdilah S. (Mobile Developer)\n3. Dian Rizqi S. (ML Engineer)\n4. Fayza Aurellia S.P. (ML Engineer)\n5. Andrea Rossi (Cloud Engineer)\n6. Johanes Krishna (Cloud Engineer)</string>
+    <string name="versi">Version 1.0</string>
 </resources>
