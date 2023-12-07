@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "228138438956",
+    "project_id": "beras-ai",
+    "storage_bucket": "beras-ai.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228138438956:android:4aaa4d52a9b289e8639c89",
+        "android_client_info": {
+          "package_name": "com.example.beras_ai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUI6osoxW2mh2LuZd52ZqwBi-tPhmacPk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
