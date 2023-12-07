@@ -1,3 +1,5 @@
+[![febri009](https://circleci.com/gh/febri009/BERAS_AI.svg?style=shield)](https://circleci.com/gh/febri009/BERAS_AI)
+
 <p align="center"><img src="https://i.ibb.co/mCYZSF5/logo.png" width="250"></p>
 
 
